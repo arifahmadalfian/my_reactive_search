@@ -12,7 +12,7 @@ import kotlinx.coroutines.flow.*
 @FlowPreview
 @ExperimentalCoroutinesApi
 class MainViewModel: ViewModel() {
-    private val accessToken = "pk.eyJ1IjoiYXJpZmFobWFkYWxmaWFuIiwiYSI6ImNrbDdtNnkwMTAzcW4ydWxiOWVkbmhiMWgifQ.Is9HRuKmKGXgW0l5AiWGlw"
+    private val accessToken = "pk.eyJ1IjoiYXJpZmFobWFkYWxmaWFuIiwiYSI6ImNrYmVzc29kajBvbnAycW0yNDl0MTZvMWEifQ.AhBe0NApVwrYE1H4SNnP-A"
     val queryChannel = BroadcastChannel<String>(Channel.CONFLATED)
 
     val searchResult = queryChannel.asFlow()

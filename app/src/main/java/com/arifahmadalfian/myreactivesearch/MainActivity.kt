@@ -15,10 +15,11 @@ import kotlinx.coroutines.FlowPreview
 import kotlinx.coroutines.launch
 
 @FlowPreview
+@ExperimentalCoroutinesApi
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
-    @ExperimentalCoroutinesApi
+
     val viewModel: MainViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
