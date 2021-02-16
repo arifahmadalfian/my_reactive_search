@@ -1,5 +1,6 @@
 package com.arifahmadalfian.myreactivesearch.network
 
+import com.arifahmadalfian.myreactivesearch.model.PlaceResponse
 import retrofit2.http.GET
 import retrofit2.http.Path
 import retrofit2.http.Query
@@ -10,5 +11,5 @@ interface ApiService {
        @Path("query") query: String,
        @Query("access_token") accessToken: String,
        @Query("autocomplete") autoComplete: Boolean = true
-    )
+    ): PlaceResponse
 }
